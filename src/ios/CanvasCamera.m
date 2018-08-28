@@ -322,7 +322,10 @@
                 imagePath = [NSString stringWithFormat:@"file://%@", imagePath];
 
                 NSString *javascript = [NSString stringWithFormat:@"%@%@%@", @"CanvasCamera.capture('", imagePath, @"');"];
-                [self.webView stringByEvaluatingJavaScriptFromString:javascript];
+                
+                if ([self.webView isKindOfClass:[UIWebView class]]) {
+                    [(UIWebView*)self.webView stringByEvaluatingJavaScriptFromString:javascript];
+                }
             }
         });
 
