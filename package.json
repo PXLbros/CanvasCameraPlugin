@@ -1,10 +1,13 @@
 {
   "name": "pxl-canvas-camera-plugin",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
+  "description": "PXL Canvas Camera Plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PXLbros/CanvasCameraPlugin"
   },
-  "author": "Ian Williams",
+  "dependencies": {
+    "cordova": "*"
+  },
   "license": "ISC"
 }
